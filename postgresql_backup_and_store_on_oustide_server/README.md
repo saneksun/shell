@@ -6,6 +6,7 @@ The script does the following actions:
 5. Add info into a log file (/var/log/dbbackuplog.log)
 
 ######
+
 Run the scipt manualy for DB user postgres:
 
 sudo -u postgres /opt/dbbackup.sh 2>>/var/log/dbbackuplog.log 
@@ -26,6 +27,7 @@ Verify existing tasks for all users:
 for user in $(cut -f1 -d: /etc/passwd); do echo $user; sudo crontab -u $user -l; done
 
 ######
+
 SSH key-based authentication 
 
 1. create ssh keys:
