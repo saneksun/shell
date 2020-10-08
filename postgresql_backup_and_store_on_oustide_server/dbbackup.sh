@@ -30,7 +30,7 @@ else
             exit 1
     fi
 fi
-
+# check and delete empty file(s)
 if [[ -n "$zerofile" ]]; then
     echo "$(date +%Y-%m-%d_%H:%M:%S) Empty file(s) "$zerofile" deleted." >> $logfile
 # Left last 14 backups
