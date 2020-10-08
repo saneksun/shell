@@ -1,5 +1,5 @@
 The script does the following actions: 
-1. Create a postgresql DB backup file
+1. Create a Postgresql DB backup file (/var/backups/dbbackup/)
 2. Check if the created DB backup is different from the last stored. If it's the same - deletes the new one.
 3. If the new DB backup is different - sent it to remote storage server via scp (using ssh key-based authentication)
 4. Add info into log file (/var/log/dbbackuplog.log)
