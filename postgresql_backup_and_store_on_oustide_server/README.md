@@ -37,8 +37,11 @@ it will create private key called id_rsa and public key kalled ip_rsa.pub
 
 2. copy the public key to the server:
 ssh-copy-id username@server_ip
+
 OR
+
 cat ~/.ssh/id_rsa.pub | ssh username@remote_host "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+
 OR copy it manualy to ~/.ssh/authorized_keys
 
 now you can connect using "ssh username@server_ip" command without using password  
