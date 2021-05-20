@@ -31,11 +31,14 @@ for user in $(cut -f1 -d: /etc/passwd); do echo $user; sudo crontab -u $user -l;
 SSH key-based authentication 
 
 1. create ssh keys:
+
  ssh-keygen
 
 it will create private key called id_rsa and public key kalled ip_rsa.pub
 
 2. copy the public key to the server:
+
+
 ssh-copy-id username@server_ip
 
 OR
