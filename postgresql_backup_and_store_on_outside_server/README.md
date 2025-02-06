@@ -34,7 +34,7 @@ SSH key-based authentication
 
  ssh-keygen
 
-it will create private key called id_rsa and public key kalled ip_rsa.pub
+it will create private key called id_rsa and public key called ip_rsa.pub
 
 2. copy the public key to the server:
 
